@@ -11,14 +11,15 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "mysql:mysql-connector-java:8.0.23"
     testCompile "com.zaxxer:HikariCP:4.0.2"
     testCompile "org.slf4j:slf4j-simple:1.7.30"
 
     def junitJupiterVersion = '5.4.2'
     def testContainersVersion = '1.15.2'
-    testCompile 'org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion'
-    testCompile 'org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion'
+    testCompile "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
+    testCompile "org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
 
     testCompile "org.testcontainers:testcontainers:$testContainersVersion"
     testCompile "org.testcontainers:junit-jupiter:$testContainersVersion"
