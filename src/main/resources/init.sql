@@ -6,4 +6,4 @@ CREATE TABLE film (
 );
 
 
-INSERT INTO (title, rating) film VALUES ('Klaus', 9.8), ('Coco', 8.9);
+INSERT INTO film (title, rating)  VALUES ('Coco', 8.9), ('Klaus', 9.8);
